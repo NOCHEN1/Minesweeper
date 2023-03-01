@@ -17,7 +17,6 @@ void setup(){
             buttons[j][k] = new MSButton(j, k);
         }
     }
-    //declare and initialize buttons
     setBombs();
 }
 public void setBombs() {
@@ -29,7 +28,6 @@ public void setBombs() {
         }
     }
 }
-
 public void draw(){
     background(0);
     if (isWon())
@@ -65,7 +63,6 @@ public void displayLosingMessage(){
     buttons[11][9].setLabel("E");
     buttons[11][10].setLabel("R");
     buttons[11][11].setLabel("!");
-    
 }
 public void displayWinningMessage(){
     //your code here
@@ -77,7 +74,6 @@ public void displayWinningMessage(){
     buttons[11][10].setLabel("N");
     buttons[11][11].setLabel("!");
 }
-
 public class MSButton{
     private int r, c;
     private float x, y, width, height;
@@ -147,7 +143,6 @@ public class MSButton{
             fill(200);
         else
             fill(100);
-
         rect(x, y, width, height);
         fill(0);
         text(label, x + width / 2, y + height / 2);
