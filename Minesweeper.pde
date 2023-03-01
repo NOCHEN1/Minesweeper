@@ -12,9 +12,9 @@ void setup(){
 
     Interactive.make(this);
     buttons = new MSButton[NUM_ROWS][NUM_COLS];
-    for (int j = 0; j < NUM_ROWS; j++){
-        for (int k = 0; k < NUM_COLS; k++){
-            buttons[j][k] = new MSButton(j, k);
+    for (int x = 0; x < NUM_ROWS; x++){
+        for (int y = 0; y < NUM_COLS; y++){
+            buttons[x][y] = new MSButton(x,y);
         }
     }
     setBombs();
