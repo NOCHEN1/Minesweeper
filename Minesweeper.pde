@@ -163,16 +163,16 @@ public class MSButton{
     }
      public int countBombs(int row, int col)
     {
-        int numBombs = 0;
+        int B = 0;
         for(int i=-1;i<2;i++){
             for(int j=-1;j<2;j++){
                 if(isValid(row+i,col+j)==true){
                     if(bombs.contains(buttons[row+i][col+j])){
-                        numBombs++;
+                        B++;
                     }
                 }
             }
         }
-        return numBombs;
+        return B;
     }
 }
